@@ -1,0 +1,114 @@
+@charset "UTF=8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+@font-face {
+    font-family: bebas;
+    src: url(../fonte/BebasNeue-Regular.otf);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: var(--cor4);
+
+}
+
+:root{
+    --cor0: #E07E11;
+    --cor1: #B6762D;
+    --cor2: #8B653A;
+    --cor3: #614E38;
+    --cor4: #33302D;
+}
+
+header{
+    background-color: var(--cor4);
+    color: var(--cor0);
+    text-align: center;
+    font-family: "Passion One", sans-serif;
+    font-size: 1.5vw;
+}
+
+header h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 4vw;
+}
+
+header p{
+    padding-bottom: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: snow;
+    font-size: 1.5em;
+}
+
+a:hover{
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0, 0.637);
+    transition-duration: 0.5s;
+    border-radius: 3px;
+}
+
+section{
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: Sriracha, cursive;
+    font-size: 3vw;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: grey;
+    color: white;
+    box-shadow: inset 3px 3px 3px 8px rgba(0, 0, 0, 0.342);
+}
+
+section.imagem p{
+    background-color: rgba(0, 0, 0, 0.452);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 2px 2px 2px black;
+    box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.63);
+}
+
+section#img01{
+    background-image: url(../imagens/cidade.jpg);
+    background-position: left center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    max-width: 100%;
+}
+
+section#img02{
+    background-image: url(../imagens/escrevendo.jpg);
+    background-position: left left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    max-width: 100%;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: bebas, serif;
+    font-size: 1.5vw;
+    line-height: 1.5vw;
+}
